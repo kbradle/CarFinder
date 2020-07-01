@@ -1,6 +1,6 @@
 LICENSE
 MANIFEST.in
-README.rst
+README.md
 manage.py
 setup.py
 carfinder/__init__.py
