@@ -1,9 +1,8 @@
 # NOTE
 We created a local package for installation because one of our packages (the machine learning model) was too large to upload to PyPi because of their 60 mb file size limit.
 
-
 # Description
-We used machine learning to identify a car's make, model, and year based solely on a photo.
+We used machine learning to identify a car's make, model, and year based solely on a photo. Our development GitHub is here: https://github.com/GaboxFH/cis4930-carfinder and our production GitHub is here: https://github.com/kbradle/CarFinder.
 
 #### Features
 - "Upload" Page
