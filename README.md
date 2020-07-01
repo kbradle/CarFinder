@@ -28,10 +28,13 @@ We used machine learning to identify a car's make, model, and year based solely 
 
 3. Go to `http://127.0.0.1:8000/` in a browser.
 
-FindCar should be ready to use! 
+FindCar should be ready to use!
 
-# (optionally) Virtual Env Setup
+#### (optional) Development Instructions
+To recreate the `dist/django-findcar-0.0.10.tar.gz` file, run the following command  
+- `sudo python3 setup.py sdist`
 
+# (optional) Virtual Env Setup
 1. once inside the project directory run `virtualenv . -p python3`
 
 2. run `source bin/activate` to start your env 
