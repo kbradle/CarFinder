@@ -1,18 +1,28 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    </head>
+  <style>
+    .plot{
+    background-color:black;
+    }
+  </style>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <div class="col-md-8 mb-5">
+    <br>
+    <h2>We predict your image is a</h2>
+    <h2>{{predictedLabel}}</h2>
     <div>
-        <h2>We predict your image is a</h2>
-        <h2>{{predictedLabel}}</h2>
-        <div class="img_div">
-            <img src={{imagePath}} alt='Uploaded Image' class='image'>
-        </div>
-        <br>
-        <div class="plot_div">
-            <img src={{plotImagePath}} alt='Confidence Values' class='plot'>
-        </div>
+      <img src={{imagePath}} alt='Uploaded Image' class = "img-responsive" width = "100%">
     </div>
+    <br>
+    <p>
+      Below is a graph of the confidence percentages of our top 5 predictions. Each percentage is a rough estimate of how confident our model was in choosing that prediction over the other top 5 predictions.
+    </p>
+    <br>
+    <div>
+      <img src={{plotImagePath}} alt='Confidence Values' class = "img-responsive" width = "100%" >
+    </div>
+  </div>
 </html>
